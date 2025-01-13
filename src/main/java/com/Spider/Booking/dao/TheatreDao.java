@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.Spider.Booking.dto.Theatre;
+import com.Spider.Booking.entity.Theatre;
 import com.Spider.Booking.repository.TheatreRepository;
 @Repository
 public class TheatreDao {

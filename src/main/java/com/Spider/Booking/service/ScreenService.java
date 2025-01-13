@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import com.Spider.Booking.dao.ScreenDao;
-import com.Spider.Booking.dto.Screen;
+import com.Spider.Booking.entity.Screen;
 import com.Spider.Booking.util.ResponseStructure;
 import com.Spider.Booking.execption.ListOfScreenNotFoundException;
 import com.Spider.Booking.execption.ScreenNotFoundException;

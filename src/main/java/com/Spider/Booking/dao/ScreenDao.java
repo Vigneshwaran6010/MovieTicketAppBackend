@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.Spider.Booking.dto.Screen;
+import com.Spider.Booking.entity.Screen;
 import com.Spider.Booking.repository.ScreenRepository;
 @Repository
 public class ScreenDao {

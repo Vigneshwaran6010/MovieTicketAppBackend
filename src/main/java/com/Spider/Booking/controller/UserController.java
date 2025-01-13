@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.Spider.Booking.dto.User;
-import com.Spider.Booking.extra.UserDto;
+
+import com.Spider.Booking.dto.UserDto;
+import com.Spider.Booking.entity.User;
 import com.Spider.Booking.service.UserService;
 import com.Spider.Booking.util.ResponseStructure;
 @RestController

@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.Spider.Booking.dto.Movieshow;
+import com.Spider.Booking.entity.Movieshow;
 import com.Spider.Booking.repository.MovieshowRepository;
 @Repository
 public class MovieshowDao {

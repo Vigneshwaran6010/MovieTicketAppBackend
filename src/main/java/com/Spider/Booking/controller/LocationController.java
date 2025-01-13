@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.Spider.Booking.dto.Location;
+
+import com.Spider.Booking.entity.Location;
 import com.Spider.Booking.service.LocationService;
 import com.Spider.Booking.util.ResponseStructure;
 

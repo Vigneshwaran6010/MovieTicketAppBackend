@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.Spider.Booking.dao.SeatDao;
-import com.Spider.Booking.dto.Seat;
+import com.Spider.Booking.entity.Seat;
 import com.Spider.Booking.execption.ListofSeatsNotFoundExecption;
 import com.Spider.Booking.execption.SeatNotFoundException;
 import com.Spider.Booking.util.ResponseStructure;

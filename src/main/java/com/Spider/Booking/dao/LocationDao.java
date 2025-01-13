@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.Spider.Booking.dto.Location;
+import com.Spider.Booking.entity.Location;
 import com.Spider.Booking.repository.LocationRepository;
 @Repository
 public class LocationDao {

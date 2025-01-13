@@ -1,4 +1,4 @@
-package com.Spider.Booking.dto;
+package com.Spider.Booking.entity;
 
 import java.util.List;
 
@@ -9,22 +9,23 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 
 
 @Entity
 @Data
-public class User {
+public class Admin {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int userId;
-	private String userName;
-	private String userEmail;
-	private long userContact;
-	private String userPassword;
-	@ManyToMany
+	private int adminId;
+	private String adminName;
+	private String adminEmail;
+	private long adminContact;
+	private String adminPassword;
+	private String confirmadminPassword;
+	
+	@OneToMany
 	@Cascade(CascadeType.ALL)
-	private List<Booking> booking;
-
+	private List<Theatre> theatre;
 }

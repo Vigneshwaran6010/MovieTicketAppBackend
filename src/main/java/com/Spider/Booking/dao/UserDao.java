@@ -7,7 +7,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.Spider.Booking.dto.User;
+import com.Spider.Booking.entity.User;
 import com.Spider.Booking.repository.UserRepository;
 
 @Repository
@@ -21,16 +21,16 @@ public class UserDao {
 		return UserRepo.save(User);
 	}
 
-	public com.Spider.Booking.extra.UserDto findById(int userId) {
+	public com.Spider.Booking.dto.UserDto findById(int userId) {
 		Optional<User> book = UserRepo.findById(userId);
 		if (book.isPresent()) {
-			return modelmapper.map(book.get(), com.Spider.Booking.extra.UserDto.class);
+			return modelmapper.map(book.get(), com.Spider.Booking.dto.UserDto.class);
 		}
 		return null;
 	}
 
 	public User updateUser(int userId, User User) {
-		com.Spider.Booking.extra.UserDto book = findById(userId);
+		com.Spider.Booking.dto.UserDto book = findById(userId);
 		if (book != null) {
 			book.setUserId(userId);
 			return UserRepo.save(User);

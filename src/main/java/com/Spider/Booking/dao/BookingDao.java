@@ -4,7 +4,8 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import com.Spider.Booking.dto.Booking;
+
+import com.Spider.Booking.entity.Booking;
 import com.Spider.Booking.repository.BookingRepository;
 
 @Repository

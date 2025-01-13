@@ -1,4 +1,4 @@
-package com.Spider.Booking.dto;
+package com.Spider.Booking.entity;
 
 import java.util.List;
 

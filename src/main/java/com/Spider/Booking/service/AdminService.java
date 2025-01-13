@@ -7,10 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import com.Spider.Booking.dao.AdminDao;
-import com.Spider.Booking.dto.Admin;
+import com.Spider.Booking.dto.Admindto;
+import com.Spider.Booking.entity.Admin;
 import com.Spider.Booking.execption.ListOfAdminNotFoundException;
 import com.Spider.Booking.execption.AdminNotFoundException;
-import com.Spider.Booking.extra.Admindto;
 import com.Spider.Booking.util.ResponseStructure;
 import com.Spider.Booking.execption.UserNotFoundException;
 

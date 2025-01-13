@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import com.Spider.Booking.dao.UserDao;
-import com.Spider.Booking.dto.User;
+import com.Spider.Booking.entity.User;
 import com.Spider.Booking.execption.AdminNotFoundException;
 import com.Spider.Booking.util.ResponseStructure;
 import com.Spider.Booking.execption.ListOfAllUserNotFoundException;
@@ -25,14 +25,14 @@ public class UserService {
 		return new ResponseEntity<ResponseStructure<User>>(sturcture,HttpStatus.CREATED);
 	}
 
-	public ResponseEntity<ResponseStructure<com.Spider.Booking.extra.UserDto >> findUserById(int userId) {
-		com.Spider.Booking.extra.UserDto foundUser = userdao.findById(userId);
+	public ResponseEntity<ResponseStructure<com.Spider.Booking.dto.UserDto >> findUserById(int userId) {
+		com.Spider.Booking.dto.UserDto foundUser = userdao.findById(userId);
 		if (foundUser != null) {
-			ResponseStructure<com.Spider.Booking.extra.UserDto> sturcture = new ResponseStructure<>();
+			ResponseStructure<com.Spider.Booking.dto.UserDto> sturcture = new ResponseStructure<>();
 			sturcture.setData(foundUser);
 			sturcture.setMessage("User found success");
 			sturcture.setStatus(HttpStatus.FOUND.value());
-			return new ResponseEntity<ResponseStructure<com.Spider.Booking.extra.UserDto>>(sturcture,HttpStatus.FOUND);
+			return new ResponseEntity<ResponseStructure<com.Spider.Booking.dto.UserDto>>(sturcture,HttpStatus.FOUND);
 		}
 		throw new UserNotFoundException("For A Given Id User Is Not Present");
 	}
@@ -51,7 +51,7 @@ public class UserService {
 	}
 
 	public ResponseEntity<ResponseStructure<User>> deleteUser(int userid) {
-		ResponseEntity<ResponseStructure<com.Spider.Booking.extra.UserDto>> foundedUser = findUserById(userid);
+		ResponseEntity<ResponseStructure<com.Spider.Booking.dto.UserDto>> foundedUser = findUserById(userid);
 		if (foundedUser != null) {
 			ResponseStructure<User> structure = new ResponseStructure<>();
 			User user = userdao.deleteUser(userid);

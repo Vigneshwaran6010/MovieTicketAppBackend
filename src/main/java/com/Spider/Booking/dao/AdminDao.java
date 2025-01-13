@@ -5,8 +5,9 @@ import java.util.Optional;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import com.Spider.Booking.dto.Admin;
-import com.Spider.Booking.extra.Admindto;
+
+import com.Spider.Booking.dto.Admindto;
+import com.Spider.Booking.entity.Admin;
 import com.Spider.Booking.repository.AdminRepository;
 
 @Repository

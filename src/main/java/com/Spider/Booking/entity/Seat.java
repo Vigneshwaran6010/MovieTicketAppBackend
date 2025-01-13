@@ -1,4 +1,4 @@
-package com.Spider.Booking.dto;
+package com.Spider.Booking.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,13 +8,11 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Ticket {
+public class Seat {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int ticketId;
-	private String movieName;
-	private String movieShow;
-	private int no_Of_Seat;
-	private double ticketCost;
+	private int seatId;
+	private int screenId;
+	private int seatNumber;
 
 }

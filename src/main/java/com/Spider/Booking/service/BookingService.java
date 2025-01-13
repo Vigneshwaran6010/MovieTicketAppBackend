@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import com.Spider.Booking.dao.BookingDao;
-import com.Spider.Booking.dto.Booking;
+import com.Spider.Booking.entity.Booking;
 import com.Spider.Booking.util.ResponseStructure;
 
 import com.Spider.Booking.execption.BookingDeleteNotFound;

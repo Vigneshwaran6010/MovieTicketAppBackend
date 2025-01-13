@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import com.Spider.Booking.dao.MovieDao;
-import com.Spider.Booking.dto.Movie;
+import com.Spider.Booking.entity.Movie;
 import com.Spider.Booking.util.ResponseStructure;
 import com.Spider.Booking.execption.ListOfMoviesNotFoundException;
 import com.Spider.Booking.execption.MovieNotFoundException;

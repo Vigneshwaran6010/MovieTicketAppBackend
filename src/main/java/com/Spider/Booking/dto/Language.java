@@ -1,4 +1,4 @@
-package com.Spider.Booking.extra;
+package com.Spider.Booking.dto;
 
 public enum Language {
 
