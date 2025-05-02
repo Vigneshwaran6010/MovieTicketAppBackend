@@ -27,7 +27,6 @@ public class AdminController {
 	public ResponseEntity<ResponseStructure<Admin>> saveAdmin( @RequestBody Admin admin) {
 		return AdminService.saveAdmin(admin);
 	}
-
 	@GetMapping
 	public ResponseEntity<ResponseStructure<Admindto>> findAdminByID(@RequestParam int adminId) {
 		return AdminService.findAdminById(adminId);
@@ -37,13 +36,10 @@ public class AdminController {
 	public ResponseEntity<ResponseStructure<List<Admin>>> findAllAdmin() {
 		return AdminService.findAllAdmin();
 	}
-
-
 	@PutMapping
 	public ResponseEntity<ResponseStructure<Admin>> updateAdmin(@RequestParam int adminId, @RequestBody Admin admin) {
 		return AdminService.updateAdmin(adminId, admin);
 	}
-
 	@DeleteMapping
 	public ResponseEntity<ResponseStructure<Admin>> deleteAdmin(@RequestParam int adminId) {
 		return AdminService.deleteAdmin(adminId);
